@@ -1,0 +1,101 @@
+ body {
+    font-family: Noto Sans, sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+    background-color: rgb(26, 26, 25); 
+    color: rgba(245, 242, 228, 0.903);
+}
+
+#header{
+    width: 100%; text-align: 
+    center;border-radius:5px;
+    background: rgba(74, 26, 130, 0.227);}
+
+/* unvisited link */
+a:link {
+    color: #916be99f;
+}
+/* visited link */
+a:visited {
+    color: #8360cf;
+}
+/* mouse over link */
+a:hover {
+    color: #cfdb92;
+}
+/* selected link */
+a:active {
+    color: #ae00ff;
+}
+
+#h1heading {
+    color:rgb(190, 185, 128);
+    font-family: American Typewriter, serif;
+    font-style: italic;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.copyright {
+    position: fixed; 
+    bottom: 0; right: 0; width: 300px; 
+    background-color: rgb(42, 28, 131);
+    font-size: .75em;
+}
+
+.menu {
+    text-align: center;
+}
+/* contact */
+td {
+    border-color: rgb(255, 255, 255); 
+    border-style: solid; 
+    padding: 10px;   
+    border-radius: 25px;
+    background-color: #e3e3de; 
+    color: rgb(8, 6, 6)
+}
+
+/* about */
+.bio {
+    text-align: center;
+    color:rgb(251, 239, 231);
+}
+
+#homepagepic {
+    float: left;
+}
+
+#intro {
+    text-align: center;
+}
+
+/* resume */
+#resume 
+{
+    font-size: 1.25em;
+    font-weight: lighter;
+    color:rgb(182, 179, 234)
+}
+
+h3 {
+    color:rgb(223, 128, 212);
+    font-style: italic;
+}
+
+.companydate {
+    font-style: italic;
+    font-size: .75em;
+    color: rgba(200, 195, 178, 0.903);
+}
+
+.award {
+    font-style: italic;
+    font-size: .65em;
+    color: rgba(195, 162, 199, 0.903);
+}
+
+
+
+
