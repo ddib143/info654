@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <title>my tip calculator</title>
+</head>
+<style> 
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(216, 201, 201); 
+    color: rgb(223, 94, 94);
+    text-align: center;}
+    
+</style>
+
+<body>
+<h2>My tip calculator</h2>
+<label for="cost">Cost of Meal</label>
+<input id="cost" type="number" step=".01" ><br><br> <label for="tipamt">Tip percentage</label>
+<input id="tipamt" type="number" step=" 01" title="Tip percentage"><br><br> <button type="button" onclick="myFunction()">Calculate Tip Amount</button>
+<h2 id="demo"></h2>
+
+<script>
+
+    function myFunction () {
+    let x = document. getElementById("cost"). value;
+    let y = document.getElementById("tipamt").value;
+    let text="";
+    let tip = (x*y)/100;
+    text = "tip amount: $" + tip.toFixed(2);
+    document. getElementById("demo"). innerHTML = text;
+    }
+</script>
+</body>
+
+
+</html>
