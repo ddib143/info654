@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Get Creative!</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Art 4 Kidz</h1>
+    <h2>Let's Get Creative!</h2>
+
+    <div id="leftnav">
+        <a href="index.html">Home</a>
+        <br>
+        <a href="about.html">About</a>
+        <br>
+        <a href="randomartgenerator.html">Random Art Generator</a>
+        <br>
+        <a href="letsgetcreative.html">Let's Get Creative!</a>
+        <br>
+        <a href="resources.html">Resources for Parents & Teachers</a>
+    </div>
+
+    <div id="content">
+        <p>Here's a list of things you can use to start getting creative: crayons, markers, paint, pencils, play-doh,
+            slime, chalk</p>
+
+        <button type="button" onclick="creative()">Let's Get Creative!</button>
+        <h2 id="demo"></h2>
+        <script>
+            function creative() {
+
+                let myList = ["crayons", "markers", "paint", "pencils", "play-doh", "slime", "chalk"]
+                document.getElementById("demo").innerHTML = myList;
+                alert('woop woop');
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
