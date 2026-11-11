@@ -9,8 +9,12 @@
 </head>
 
 <body>
-    <h1>Art 4 Kidz</h1>
-    <h2>Let's Get Creative!</h2>
+     <div id="titleheader">
+    <h1 id="h1heading">Art 4 Kidz</h1>
+    </div>
+      <div id="pageheader">
+     <h2>Let's get creative!</h2>
+    </div>
 
     <div id="leftnav">
         <a href="index.html">Home</a>
@@ -25,10 +29,20 @@
     </div>
 
     <div id="content">
-        <p>Here's a list of things you can use to start getting creative: crayons, markers, paint, pencils, play-doh,
-            slime, chalk</p>
+        <p>Here's a list of materials you can use to start getting creative: 
+                <ul> 
+            <li>crayons
+            <li>markers
+            <li>paint
+            <li>pencils
+            <li>play-doh
+            <li> slime
+            <li>chalk</li>
+                
+            <h3>Click the button below & use that material to create a piece of art!</h3>
+            </p>
 
-        <button type="button" onclick="creative()">Let's Get Creative!</button>
+        <button class="button" onclick="creative()">Let's Get Creative!</button>
         <h2 id="demo"></h2>
         <script>
             function creative() {
@@ -39,7 +53,7 @@
             }
         </script>
     </div>
-
+<div class="copyright">&#169; alexandra liggett & deanna dibenedetto 2026</div>
 </body>
 
 </html>
