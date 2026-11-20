@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Art Generator</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+     <div id="titleheader">
+     <h1 id="h1heading">&#127912;  Art 4 Kidz &#127912;</h1>
+    </div>
+   
+
+<div id="leftnav">
+        <div class="nav-item">&#127968; <a href="index.html">Home</a></div>
+        <div class="nav-item">&#128161; <a href="about.html">About</a></div>
+        <div class="nav-item">&#128444; <a href="randomartgenerator.html">Random Art Generator</a></div>
+        <div class="nav-item">&#128397; <a href="letsgetcreative.html">Let's Get Creative!</a></div>
+        <div class="nav-item">&#127963; <a href="resources.html">Resources for Parents &amp; Teachers</a></div>
+    </div>
+
+    <div id="content">
+
+           <div id="pageheader">
+     <h2>&#128444 Random Art Generator &#128444</h2>
+    </div>
+
+        <div class="card">
+        <h3>Let's get inspired and explore some art! </h3>
+          
+          <p>Click the button below to see art from the Art Institute of Chicago and 
+            spend 5-10 minutes looking at the image. What materials do you think were used? What do you notice about the style?
+            When do you think this was created? What is something that you like or that you don't like?
+          </p>
+</div>
+
+<button class="button" onclick="getRandomArt()">Show Me Art!</button>
+<br>
+<img id="art" style="max-width: 30%;">
+
+<script>
+  async function getRandomArt() {
+    let page = Math.floor(Math.random() * 1000) + 1;
+    let url = `https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&limit=1&page=${page}&fields=image_id`;
+
+    let response = await fetch(url);
+    let json = await response.json();
+    let id = json.data[0].image_id;
+
+    if (!id) return getRandomArt(); // no image on this one, pick another
+    document.getElementById("art").src = `${json.config.iiif_url}/${id}/full/843,/0/default.jpg`;
+  }
+</script>
+    </div>
+
+
+    <div class="copyright">&#169; alexandra liggett & deanna dibenedetto 2026</div>
+</body>
+
+</html>

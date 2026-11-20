@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Get Creative!</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+     <div id="titleheader">
+    <h1 id="h1heading">&#127912;  Art 4 Kidz &#127912;</h1>
+     </div>
+
+  <div id="leftnav">
+        <div class="nav-item">&#127968; <a href="index.html">Home</a></div>
+        <div class="nav-item">&#128161; <a href="about.html">About</a></div>
+        <div class="nav-item">&#128444; <a href="randomartgenerator.html">Random Art Generator</a></div>
+        <div class="nav-item">&#128397; <a href="letsgetcreative.html">Let's Get Creative!</a></div>
+        <div class="nav-item">&#127963; <a href="resources.html">Resources for Parents &amp; Teachers</a></div>
+    </div>
+
+    <div id="content">
+           <div id="pageheader">
+     <h2> &#9889; Let's get creative! &#9889;</h2>
+    </div>
+
+<div class="card">
+        <h2>Here's a list of materials you can use to start getting creative:</h2>
+            <p>&#128397; crayons &#128397;</p>
+            <p>&#127912; paint &#127912;</p>
+           <p>&#9999; pencils &#9999;</p> 
+           <p>&#128992; play-doh &#128992;</p> 
+           <p>&#128394; markers &#128394;</p>
+           <p>&#129440; slime &#129440;</p> 
+           <p>&#129521; chalk &#129521;</p> 
+                <br>
+            <h3>What should you use? Click the button below to choose a random material!</h3>
+            <p>Once you have the material to work with, try creating art about your favorite thing. It can be your cat, your best friend, your baseball bat... anything!</p>
+</div>
+            
+
+       <button class="button" onclick="creative()">Let's Get Creative!</button>
+<h2 id="demo"></h2>
+
+<script>
+    function creative() {
+        let myList = ["CRAYONS!", "MARKERS!", "PAINT!", "PENCILS!", "PLAY-DOH!", "SLIME!", "CHALK!"];
+        //Math.random gives you a random decimal number, then multiplied by list length, which is 7, gives you something between 0-7.  
+        //Math.floor will remove the decimal so it's a whole number, and then this number corresponds to the position of the word in the list.
+        let randomIndex = Math.floor(Math.random() * myList.length);
+        document.getElementById("demo").innerHTML = myList[randomIndex];
+    }
+</script>
+    </div>
+<div class="copyright">&#169; alexandra liggett & deanna dibenedetto 2026</div>
+</body>
+
+</html>
